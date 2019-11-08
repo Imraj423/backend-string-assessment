@@ -18,12 +18,8 @@
 
 
 def verbing(s):
-    if len(s) >= 3:
-        if s[-3:] != 'ing':
-            s = s + 'ing'
-        else:
-            s = s + 'ly'
-    return s
+    """Your code goes here.  Edit this docstring."""
+    return
 
 
 # E. not_bad
@@ -35,11 +31,8 @@ def verbing(s):
 # So 'This dinner is not that bad!' yields:
 # This dinner is good!
 def not_bad(s):
-    n = s.find('not')
-    b = s.find('bad')
-    if n != -1 and b != -1 and b > n:
-        s = s[:n] + 'good' + s[b+3:]
-    return s
+    """Your code goes here.  Edit this docstring."""
+    return
 
 
 # F. front_back
@@ -50,28 +43,25 @@ def not_bad(s):
 # Given 2 strings, a and b, return a string of the form
 #  a-front + b-front + a-back + b-back
 def front_back(a, b):
-    a_middle = len(a) / 2
-    b_middle = len(b) / 2
-    if len(a) % 2 == 1:  # add 1 if length is odd
-        a_middle = a_middle + 1
-    if len(b) % 2 == 1:
-        b_middle = b_middle + 1
-    return a[:a_middle] + b[:b_middle] + a[a_middle:] + b[b_middle:]
+    """Your code goes here.  Edit this docstring."""
+    return
 
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
 def test(got, expected):
+    """Your code goes here.  Edit this docstring."""
     if got == expected:
         prefix = ' OK '
     else:
         prefix = '  X '
-    print('%s got: %s expected: %s' % (prefix, repr(got), repr(expected)))
+    print('{} got: {} expected: {}'.format(prefix, repr(got), repr(expected)))
 
 
 # main() calls the above functions with interesting inputs,
 # using the above test() to check if the result is correct or not.
 def main():
+    """Your code goes here.  Edit this docstring."""
     print('verbing')
     test(verbing('hail'), 'hailing')
     test(verbing('swiming'), 'swimingly')
