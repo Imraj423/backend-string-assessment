@@ -25,7 +25,7 @@
 # So donuts(5) returns 'Number of donuts: 5'
 # and donuts(23) returns 'Number of donuts: many'
 
-__author__ = "Imraj423" "with ref from google"
+__author__ = "Imraj423"
 
 
 def donuts(count):
@@ -61,6 +61,7 @@ def fix_start(s):
     length = len(s)
     s = s.replace(s[0], '*')
     s = char + s[1:]
+
     return  s
 
 

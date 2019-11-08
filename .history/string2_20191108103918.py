@@ -50,13 +50,13 @@ def not_bad(s):
 # Given 2 strings, a and b, return a string of the form
 #  a-front + b-front + a-back + b-back
 def front_back(a, b):
-    new_a = len(a) / 2
-    new_b = len(b) / 2
-    if len(a) % 2 == 1:  
-        new_a += 1
+    a_new = len(a) / 2
+    b_new = len(b) / 2
+    if len(a) % 2 == 1:  # add 1 if length is odd
+        a_new = a_new + 1
     if len(b) % 2 == 1:
-        new_b += 1
-    return a[:new_a] + b[:new_b] + a[new_a:] + b[new_b:]
+        b_new = b_new + 1
+    return a[:a_new] + b[:b_new] + a[a_new:] + b[b_new:]
 
 
 # Provided simple test() function used in main() to print

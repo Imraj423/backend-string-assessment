@@ -25,7 +25,7 @@
 # So donuts(5) returns 'Number of donuts: 5'
 # and donuts(23) returns 'Number of donuts: many'
 
-__author__ = "Imraj423" "with ref from google"
+__author__ = "Imraj423"
 
 
 def donuts(count):
@@ -42,7 +42,7 @@ def donuts(count):
 # is less than 2, return instead the empty string.
 def both_ends(s):
     if len(s) < 2:
-        return ""
+        return " "
     else:
         return s[0:2] + s[-2:]
 
@@ -57,11 +57,11 @@ def both_ends(s):
 # Hint: s.replace(stra, strb) returns a version of string s
 # where all instances of stra have been replaced by strb.
 def fix_start(s):
-    char = s[0]
-    length = len(s)
+   
     s = s.replace(s[0], '*')
     s = char + s[1:]
-    return  s
+
+    return s
 
 
 # D. MixUp

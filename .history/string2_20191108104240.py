@@ -52,10 +52,10 @@ def not_bad(s):
 def front_back(a, b):
     new_a = len(a) / 2
     new_b = len(b) / 2
-    if len(a) % 2 == 1:  
-        new_a += 1
+    if len(a) % 2 == 1:  # add 1 if length is odd
+        new_a = new_a + 1
     if len(b) % 2 == 1:
-        new_b += 1
+        new_b = new_b + 1
     return a[:new_a] + b[:new_b] + a[new_a:] + b[new_b:]
 
 
